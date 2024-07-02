@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nested if Statement</title>
+</head>
+<body>
+    <script>
+       
+  let English = 95, Tamil = 80, Cs = 99 ;
+  let Total, avg ;
+
+  total = English + Tamil + Cs ;
+  avg = total/3 ;
+
+  console.log("Total is :" + total);
+  console.log("avg is :" + avg.toFixed(2));
+       
+
+  if(English >= 35 && Tamil >= 35 && Cs >= 99){
+       
+    console.log("Result : pass ");
+
+    if(avg >= 91 && avg <= 100){
+        console.log("Grade : A Grade " );
+    }
+    else if(avg >= 81 && avg <= 90){
+        console.log("Grade : B Grade " );
+    }
+    else if
+    (avg >= 71 && avg <= 80){
+        console.log("Grade : C Grade " );
+    }
+    else{
+        console.log("Grade : D Grade " );
+    }
+
+  }
+  else{
+    console.log("Result : Fail ");
+    console.log("Grade is : No Grade");
+
+  }
+
+    </script>
+</body>
+</html>

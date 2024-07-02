@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>function</title>
+</head>
+<body>
+   <script>
+
+// Function Declaration :
+
+// Also Known as Return type :
+
+function add(a,b){
+    return a+b ;
+}
+console.log(add(5,5));
+
+
+// Without Return Type ;
+
+function add1(){
+    let x = 10 ;
+    let y = 10 ;
+ 
+    console.log(x+y);
+}
+add1();
+
+
+// Function with Arbitary Argument :
+
+function sum(){
+    let total = 0 ;
+     for(let i=0; i<arguments.length; i++){
+        total += arguments[i];
+     }
+    return total ;
+}
+console.log(sum(10,10));
+console.log(sum(10,10,10,10));
+
+
+function sum(...args){
+    let total = 0 ;
+    for(let i=0; i<args.length; i++){
+        total += args[i];
+    }
+    return total ;
+}
+console.log(sum(5,5));
+console.log(sum(5,5,5,5));
+
+   </script> 
+</body>
+</html>

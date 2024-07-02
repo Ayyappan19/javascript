@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spread & Rest</title>
+</head>
+<body>
+    <script>
+
+// D/f b/w Rest parameter fun & Spread operator in js
+
+
+// 01. Rest parameter Function :
+
+function rest( first, second, ... reset){
+    console.log(first);
+    console.log(second);
+    console.log(reset);
+};
+rest(10,20,30,40,50,60)
+
+
+// 02.Spread Operrator :
+
+const number = [1,2,3];
+const newNumber = [...number,4,5];
+
+console.log(newNumber);
+
+
+    </script>
+</body>
+</html>

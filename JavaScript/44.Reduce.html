@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reduce</title>
+</head>
+<body>
+    <script>
+
+/*
+Syntax :
+
+array.reduce(function(accumulator,currentvalue,currentIndex,array){
+
+},initialvalue);
+
+*/
+
+// 01.Addition :
+
+let numbers = [1, 2, 3, 4, 5];
+const sum = numbers.reduce((accumulator,currentValue) => accumulator + currentValue);
+console.log(sum);
+
+
+
+// 02.Flattening an array :
+
+const nestedArray = [[1,2], [3,4], [5,6]];
+console.table(nestedArray);
+
+const Flattening =nestedArray.reduce((accumulator,currentValue)=> 
+accumulator.concat(currentValue));
+console.table(Flattening);
+
+
+
+// 03.colorCount :
+
+const colors = ["Red","Blue","Green","Blue","Red","Yellow"];
+
+const colorsCount = colors.reduce((accumulator,currentValue) => {
+        if(currentValue in accumulator){
+            accumulator[currentValue]++
+        }
+        else{
+            accumulator[currentValue]=1 ;
+        }
+        return accumulator ;
+},{});
+console.table(colorsCount);
+
+
+
+// 04.Largest Value :
+
+const Numbers = [10,20,30,40,50];
+
+const largest = Numbers.reduce((accumulator,currentValue) => {
+    return Math.max(accumulator,currentValue);
+});
+console.log(largest);
+
+
+
+// 05.
+
+
+const people = [
+        {name: "Ayyappan", age: 23, city : "Chennai", salary : 20000},
+        {name: "kavi", age: 21, city : "chennai", salary : 120000},
+        {name: "Murali", age: 22, city : "salem", salary : 2000},
+        {name: "David", age: 20, city : "villupuram", salary : 26000},
+        {name: "Priya", age: 23, city : "thuthukudi", salary : 10000},
+        {name: "ashok", age: 23, city : "salem", salary : 210000},
+        {name: "Ravi", age: 24, city : "villupuram", salary : 50000},
+        {name: "Hema", age: 21, city : "thirukoilur", salary : 80000},
+     ];
+
+ const city = people.reduce((accumulator,currentValue) =>{
+         if(currentValue.city in accumulator){
+            accumulator[currentValue.city].push(currentValue);
+         }
+         else{
+            accumulator[currentValue.city]=[currentValue];
+         }
+         return accumulator ;
+ },{})    ;
+ console.log(city);
+    </script>
+</body>
+</html>

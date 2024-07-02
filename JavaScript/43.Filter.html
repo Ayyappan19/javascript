@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter</title>
+</head>
+<body>
+    <script>
+
+        // 01.Even Number
+        // 02.age wise :
+        // 03.word
+        // 04.Select Fruits
+        // 05.Starting Letter
+        // 06.Product + amt
+
+
+        
+// 01.Even Number
+
+const numbers = [1,2,3,4,5,6,7,8,9,10];
+
+let evenNumber = numbers.filter(number => number%2 ==0);
+console.log(evenNumber);
+
+
+// 02.age wise :
+
+const users = [
+    {name : "Ayyappan", age : 23},
+    {name : "Ravi", age : 17},
+    {name : "Manoj", age : 20},
+    {name : "Hari", age : 16},
+];
+let first = users.filter(user => user.age > 18);
+console.table(first);
+
+
+
+// 03.word
+
+const words = ["Cat","Dog","Elephant","Fish","Crow"];
+
+const new1 = words.filter(word => word.length==3)
+console.log(new1);
+
+
+// 04.Select Fruits
+
+const items = [
+    { name : "Apple", category: "Fruit"},
+    { name : "carrot", category: "vegetable"},
+    { name : "banana", category: "Fruit"},
+];
+
+let Fruit = items.filter(item => item.category === "Fruit");
+console.log(Fruit);
+
+
+// 05.Starting Letter
+
+let animals = ["dog","cat","elephant","eagel","tiger"];
+
+let ani = animals.filter(animal => animal.startsWith("e"));
+console.log(ani);
+
+
+// 06.Product + amt
+
+let products = [
+{ name : "Apple", category: "Fruit", price : 100},
+    { name : "carrot", category: "vegetable", price: 80},
+    { name : "banana", category: "Fruit", price : 120},
+    { name : "tomato", category: "vegetable", price: 95},
+];
+
+let expensive = products.filter(product => product.category==="Fruit " && product.price > 100);
+console.log(expensive);
+
+    </script>
+</body>
+</html>

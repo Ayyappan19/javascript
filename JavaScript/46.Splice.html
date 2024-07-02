@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Splice</title>
+</head>
+<body>
+    <script>
+
+
+/*
+Syntax :
+        remove_elements = splice(start,length,new elements);
+*/
+
+// 01.Remove Elements :
+
+const number1 = [1,2,3,4,5,6,7,8,9,10];
+console.log("Before Splice : " + number1);
+
+const num1 = number1.splice(2);
+console.log("Removed Items : " + num1);
+
+console.log("After Splice : " + number1);
+
+
+
+// 02.Removing Center Elements : 
+
+
+const number2 = [1,2,3,4,5,6,7,8,9,10];
+console.log("Before Splice : " + number2);
+
+const num2 = number2.splice(2,3);
+console.log("Removed Items : " + num2);
+
+console.log("After Splice : " + number2);
+
+
+// 03.Insert Elements
+
+const number3 = [1,2,3,4,5,6,7,8,9,10];
+console.log("Before Splice : " + number3);
+
+const num3 = number3.splice(8,2,90,100);
+console.log("Removed Items : " + num3);
+
+console.log("After Splice : " + number3);
+
+
+// 04.Set New without remove :
+
+const number4 = [1,2,3,4,5,6,7,8,9,10];
+console.log("Before Splice : " + number4);
+
+const num4 = number3.splice(2,0,55,66);
+console.log("Removed Items : " + num4);
+
+console.log("After Splice : " + number4);
+
+
+
+    </script>
+</body>
+</html>

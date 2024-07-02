@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function inside Object</title>
+</head>
+<body>
+    <script>
+       
+       // const person={
+//   name : "ayyappan",
+//   age : 23,
+// };
+// console.log(person);
+
+
+// const person={
+//   name : "ayyappan",
+//   age : 23,
+
+//   method: function(){
+//     console.log("I am a developer");
+//   },
+
+//   method1:()=>{
+//     console.log("I am a developer");
+//   },
+
+//   method2(){
+//     console.log("I am a Developer");
+//   }
+// };
+// console.log(person);
+// person.method();
+// person.method1();
+// person.method2();
+
+
+        console.log(this);
+        var age = 50 ;
+
+        function info(){
+            console.log(this.age);
+            console.log(this);
+        }
+        info();
+
+
+        const user = {
+            age: 100,
+            fun:info
+        }
+        user.fun();
+
+
+
+
+
+        age=100;
+
+const first={
+  age:10,
+
+  fun1:function(){
+    console.log("fun1 : ",this.age);
+    console.log("fun1 : ",this);
+  
+  function fun2(){
+    console.log("fun2 : ",this.age);
+    console.log("fun2 : ",this);
+  }
+   fun2();
+
+   const fun3 = ()=> {
+    console.log("fun3 : ",this.age);
+    console.log("fun3 : ",this);
+   }
+   fun3();
+
+  },
+}
+first.fun1();
+
+
+const fun4 = ()=> {
+    console.log("fun4 : ",this.age);
+    console.log("fun4 : ",this);
+   }
+   fun4();
+
+    </script>   
+</body>
+</html>

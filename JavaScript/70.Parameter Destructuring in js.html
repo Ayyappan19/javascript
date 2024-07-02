@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parameter Destructuring in Javascript</title>
+</head>
+<body>
+    <script>
+// Object :
+
+function sayHello({name,age=24}){
+    console.log(`Hello ${name} !`);
+    console.log(`age is ${age} !`);
+};
+const add = {name: "Ayyappan",age: 40 }
+sayHello(add);
+
+
+//  Array :
+
+const numbers = [1,2,3];
+
+function add1([a,b,c]){
+    return a + b + c;
+};
+console.log(add1(numbers));
+
+
+// Multiline parameter :
+
+let person = {name:"Ravi",age: 23,address: "Chennai",gender:"Male"};
+
+function last ({name,age,...rest}){
+    console.log(`Hello ${name} You Are ${age} years old.`);
+    console.log(rest);
+}
+last(person)
+    </script>
+</body>
+</html>

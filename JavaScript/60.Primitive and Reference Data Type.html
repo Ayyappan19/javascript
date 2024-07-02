@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+
+// 01.Primitive Data Types
+
+let name = "Ayyappan" ;
+console.log(name, typeof name);
+
+let age = 24 ;
+console.log(age, typeof age);
+
+let isStudent = false ;
+console.log(isStudent, typeof isStudent);
+
+let x ;
+console.log(x), typeof x;
+
+let id = Symbol();
+console.log(id,typeof id);
+
+let a = 10 ;
+let b = a ;
+console.log(" A : " + a);
+console.log("B : " + b);
+a=50 ;
+console.log(" A : " + a);
+console.log("B : " + b);
+
+
+// 02.Reference Data Type :
+
+// Object : 
+let user1 = {name: "Ayyappan",age:23};
+let user2 = user1;
+console.log("User1 is : " , user1);
+console.log("User is : " , user2);
+user1.age = 50 ;
+console.log("User1 is : " , user1);
+console.log("User is : " , user2);
+
+// Array : 
+let array1 = [10,20,30];
+let array2 = array1;
+console.log("Array1 is " + array1);
+console.log("Array2 is " + array2);
+array1.push(40);
+console.log("Array1 is " + array1);
+console.log("Array2 is " + array2);
+
+</script>
+    
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Looping over objects by converting to an array</title>
+</head>
+<body>
+    <script>
+        let person = {
+            name : "Ayyappan",
+            age : 23 ,
+            address : "Chennai",
+        };
+
+        let keys = Object.keys(person);
+        console.table(keys);
+
+        let values = Object.values(person);
+        console.table(values);
+
+        let entries = Object.entries(person);
+        console.table(entries);
+    </script>
+</body>
+</html>

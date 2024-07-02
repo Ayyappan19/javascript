@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Block And Function Scope</title>
+</head>
+<body>
+    <script>
+
+
+// Block Scope :
+
+// if(true){
+//     let blockScope = "I am a Variable with block scope";
+//     console.log(blockScope);
+// }
+// console.log(blockScope);
+
+
+
+
+
+// Function Scope :
+
+function myFunction(){
+     functionScope = "I am a Variable with function scope";
+    console.log(functionScope);
+
+    function add(){
+        console.log(functionScope);
+    }
+    add();
+}
+myFunction();
+
+
+
+    </script>
+</body>
+</html>

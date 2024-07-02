@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+// Method One -> Spread Operator
+
+let a = [1,2,3];
+let b = [...a]
+console.log("A is " + a);
+console.log("B is " + b);
+
+
+// Method Two -> Slice()
+
+let c = [4,5,6];
+let d = c.slice();
+console.log("C is " + c);
+console.log("D is " + d);
+
+
+// Method Three -> Concat
+
+let e = [7,8,9];
+let f = [].concat(e)
+console.log("E is " + e);
+console.log("F is " + f);
+
+
+// Method Four -> Array.from
+
+let g = [10,11,12]
+let h = Array.from(g);
+console.log("G is " + g);
+console.log("H is " + h);
+
+
+    </script>
+</body>
+</html>

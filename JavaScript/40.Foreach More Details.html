@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foreach</title>
+</head>
+<body>
+    <script>
+
+
+// Content :
+
+// 01.Number One By One
+// 02.Index and Value
+
+// 03.Array One By One
+// 04.Total and Avg
+// 05.New Array Create
+// 06.Even Number
+// 07.Max Number
+// 08.Capital
+
+        // 01.Exploring the foreach method in javascript
+
+        // const fruits = ["Banana","Mango","Grapes","Orange"];
+        // console.log(fruits);
+
+        // fruits.forEach(fruit => console.log(fruit));
+
+
+
+// 02.Example of using the foreach method to sum all elements of an elements : 
+
+// const numbers = [1,2,3,4,5];
+
+// let total = 0 ;
+// numbers.forEach((number) => {
+//      total+= number ;
+// });
+// console.log(total);
+
+
+
+
+
+// 03. Example of using the foreach method to create a new array from an existing one :
+
+// const numbers = [1,2,3,4,5];
+// const doubleNumber = [];
+// numbers.forEach(number => {
+//     doubleNumber.push(number*2);
+// });
+// console.log(doubleNumber);
+
+
+
+
+// 04.
+
+const numbers = [1,2,3,4,5];
+console.log(numbers);
+let max = numbers[0];
+numbers.forEach(number => {
+    if(number >= max){
+        max = number;
+    }
+});
+console.log(max);
+
+
+
+// 05.calculate the average of array 
+
+// const numbers = [1,2,3,4,5];
+// let total = 0 ;
+// numbers.forEach(number => {
+//     total+= number ;
+// });
+// console.log(total/numbers.length);
+
+
+
+// 06.Foreach method ti filter an array :
+
+// const numbers = [1,2,3,4,5,6,7,8,9];
+// console.log(numbers);
+
+// let evenNumber = [];
+// numbers.forEach(number => {
+//     if(number%2 == 0){
+//         evenNumber.push(number);
+//     }
+// });
+// console.log(evenNumber);
+
+
+
+// 07.Array Elements Update :
+
+const names = ["jhon","ravi","kavi","raja"];
+console.log(names);
+
+names.forEach((name,index)=>{
+    console.log(name,index);
+    names[index] = name.toUpperCase();
+});
+console.log(names);
+
+
+    </script>
+</body>
+</html>

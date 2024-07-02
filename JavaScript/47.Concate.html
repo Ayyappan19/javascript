@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concate</title>
+</head>
+<body>
+    <script>
+
+const a = [10,20,30]
+const b = [40,50,60]
+const c = [70,80,90]
+
+let result = a.concat(b)
+console.log(result);
+
+
+result = a.concat(b,c);
+console.log(result);
+
+
+result = a.concat(b,c,100,110);
+console.log(result);
+
+
+result = a.concat(b,c,100,110,["a","b","c"]);
+console.log(result);
+console.table(result);
+
+    </script>
+</body>
+</html>

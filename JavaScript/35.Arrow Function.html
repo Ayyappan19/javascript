@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Function</title>
+</head>
+<body>
+    <script>
+        // Arrow Function
+
+        const add=(a,b) =>{ return a + b ; };
+        console.log(add);
+        console.log(add(5,5));
+
+
+        // 01.Arrow Function with Map :
+
+        let numbers = [1,2,3,4,5];
+        console.log(numbers);
+        let doubleNumber = numbers.map(number => number*2);
+        console.log(doubleNumber);
+
+        // 01.Arrow Function with Filter :
+
+        let words = ["apple", "banana", "orande", "grape"];
+        console.log(words);
+        let filterWords = words.filter(word => word.lenth>5);
+        console.log(filterWords);
+
+
+        // 01.Arrow Function with Reduce :
+
+        console.log(numbers);
+        let total = numbers.reduce((sum,number) => sum + number, 0);
+        console.log(total);
+
+
+        // 04. Using Arrow function to create a closure ;
+
+        let createCounter = () => {
+            let count = 0 ;
+            return()=> {
+                count++;
+                return count;
+            }
+        };
+        let counter = createCounter();
+
+        console.log(counter());
+        console.log(counter());
+        console.log(counter());
+
+
+
+    </script>
+</body>
+</html>

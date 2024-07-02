@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sort</title>
+</head>
+<body>
+    <script>
+
+const names = ["Ayyappan","Ram","Santhosh","Kavi","Reo"];
+console.log(names);
+names.sort();
+console.log(names);
+
+
+const numbers = [90,46,28,71,100,1,83,20];
+console.log(numbers);
+numbers.sort();
+console.log(numbers);
+
+numbers.sort((x,y)=> {
+     return x - y ;
+});
+console.log(numbers);
+
+
+numbers.sort((a,b)=> {
+     return b-a ;
+});
+console.log(numbers);
+
+    </script>
+</body>
+</html>

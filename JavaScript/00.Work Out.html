@@ -1,0 +1,26 @@
+<script>
+
+function addPerson (name, father, age, address) {
+    const user = {};
+       user.name = name ;
+       user.father = father ;
+       user.age = age ;
+       user.address = address ;
+
+       user.about = function(){
+        console.log(`${this.name} is from ${this.address}`);
+    }
+
+       user.eligible = function(){
+        console.log(`${this.age >= 18}`);
+    }
+    return user;
+}
+
+const person = addPerson("ayyappan", "Sam", 30, "coimbatore");
+
+console.log(person);
+person.about();
+person.eligible();
+
+</script>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>call, apply, bind</title>
+</head>
+<body>
+    <script>
+    
+    // 01.Call Method :
+
+    //  var user_name = "Ayyappan";
+    function welcome(){
+        console.log("welcome : " + this.user_name);
+    }
+    
+    const student = {user_name: "Ayyappan"}
+    welcome.call(student);
+
+    
+    
+    function total(eng,mat){
+       console.log(this.user_name + " got " + (eng+mat) + " Marks ");
+    }
+    total(25,25)
+    total.call(student,25,75)
+
+
+    // 02.apply Method :
+
+    let subjects = [50,50];
+    total.apply(student,[50,50]);
+    total.apply(student,subjects);
+
+
+    // 03.bind method :
+    
+    const  fun = total.bind(student,100,100);
+    console.log(fun);
+   fun()
+
+    </script>
+</body>
+</html>
+
+
+   
+
+
+
+</p>

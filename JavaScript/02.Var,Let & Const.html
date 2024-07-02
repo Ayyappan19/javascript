@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>var,let & const</title>
+</head>
+<body>
+    <script>
+        /*
+        var -> 1997
+
+        let & const -> 2015 E6
+        */
+
+
+// 01.Variable Declaration : -> 1997 To 2015
+        var a = 25;
+        var b = 25;
+        console.log(a+b);
+
+    // 01.Scope
+
+    // var :   -> global scope act aguthu
+    if(true){
+        var msg = "Welcome Javacript..."
+    }
+    console.log(msg);
+
+    // let & const
+    if(true){
+        let msg1 = "Welcome Javacript..."
+        console.log(msg1);
+    }
+
+    if(true){
+        const msg2 = "Welcome Javacript..."
+        console.log(msg2);
+    }
+
+
+
+    // 02.Variable Declaration
+
+    // var :
+     var b = 10;
+     console.log(b); 
+
+     var b = 20;
+     console.log(b);
+
+    
+    //  let & const :
+    let c = 10;
+    console.log(c);
+    // let c = 20;
+
+
+
+    // 03.Value Assigned
+
+    // var :
+    var d = 100;
+    console.log(d);
+    d = 150;
+    console.log(d);
+
+    // let :
+    let e = 100;
+    console.log(e);
+    e = 150;
+    console.log(e);
+
+     // const :
+    // const f = 100;
+    // console.log(f);
+    // f = 150;
+    // console.log(f);
+    
+
+
+    const student = {'name' : "Ayyappan", 'Age' : 23};
+    console.table(student);
+    console.log(student.name);
+    student.name = "Kavi";
+    console.table(student);
+
+
+    
+    </script>
+</body>
+</html>

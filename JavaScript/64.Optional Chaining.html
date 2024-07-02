@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Optional chaining</title>
+</head>
+<body>
+    <script>
+//         const person = {
+//     name : "Ayyappan",
+//     father : "Murugesan",
+//     age : 23,
+//     address : {
+//         City : "Chennai",
+//     }
+// };
+// console.log(person);
+// console.log(person.address);
+// console.log(person.address.City);
+
+
+const person = {
+    name : "Ayyappan",
+    father : "Murugesan",
+    age : 23,
+    // address : {
+    //     City : "Chennai",
+    // }
+};
+
+// method 01 :
+console.log(person.address ? person.address.City : undefined);
+
+// method 02 :
+console.log(person.address && person.address.City);
+
+// method 3 : -> optional chaining
+console.log(person.address ?. City);
+
+// method 04 :
+let key = 'City' ;
+console.log(person.address ?. [key]);
+
+    </script>
+</body>
+</html>

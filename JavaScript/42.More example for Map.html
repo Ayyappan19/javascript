@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More example for Map</title>
+</head>
+<body>
+    <script>
+
+        // 01.Multiplication :
+        // 02.Capital
+        // 03.Adding
+        // 04.Even Number
+        // 05.Indentify Names and Update
+
+// 01.Multiplication :
+
+const numbers = [1, 2, 3, 4, 5, ];
+
+const doubleNumber = numbers.map(number => number*2);
+console.table(doubleNumber);
+
+
+// 02.Capital
+
+const words = ["hello","javascript"];
+console.log(words);
+let capital = words.map(word => word.toUpperCase());
+console.log(capital);
+
+
+// 03.Adding 
+
+const fruits = ["Apple","Mango"];
+const colors = ["Red","Yellow"];
+
+const fruitsColor = fruits.map((fruit,index) => fruit + "-" + colors[index]);
+console.log(fruitsColor);
+
+
+// 04.Even Number
+
+const Number = [11,12,13,14,15];
+const even = Number.map(num => num%2 == 0);
+console.log(even);
+
+
+// 05.Indentify Names and Update
+
+const user1 = [
+    {name : "Ayyappan", age : 23},
+    {name : "Ravi", age : 30},
+    {name : "Karthi", age : 33},
+];
+console.log(user1);
+
+const names = user1.map(use => use.name);
+console.log(names);
+
+
+const update = user1.map(user => {
+    return {
+        name : user.name,
+        age : user.age+1
+    }
+})
+console.log(update);
+
+
+// 06.
+
+const list = ["Apple","Banana","Mango"];
+
+const list1 = list.map(function (value,index,array){
+   return{
+    word: value,
+    length: value.length,
+    position : index,
+    totalWords : array.length
+   }
+
+})
+console.log(list1);
+    </script>
+</body>
+</html>
